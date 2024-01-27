@@ -309,15 +309,15 @@ html{
 .footerlogo h1{
   font-family: bodrum;
   text-align: center;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .footerlogo p{
   text-align: center;
-  font-size: clamp(0.5rem,1rem,1.8rem);
+  font-size: 1rem;
   color: #90e0ef;
 }
 .footerlogo img{
-  max-height: 200px;
+  max-height: 150px;
 }
 .follow-us h1{
   text-align: center;
