@@ -227,7 +227,7 @@ html{
   z-index: 100;
   opacity: 1;
   animation-delay: 0s;
-  bottom: 0;
+  bottom: -2px;
 }
 .wave-section .wave.wave2{
   animation: waves2 15s linear infinite;
