@@ -89,7 +89,7 @@ html{
 
 
 /* Media Queries for navbar*/
-@media (min-width: 851px){
+@media (min-width: 863px){
   .header ul li{
       list-style: none;
       display: inline-block;
@@ -201,7 +201,15 @@ html{
     flex-direction: column;
     gap: 0;
   }
+}
 
+@media (max-width: 297px){
+  .logo {
+    font-size: 1.5rem;
+  }
+  .logo img{
+    height: 3rem;
+  }
 }
 
 /*FOOTER */
@@ -277,8 +285,9 @@ html{
   display: flex;
   flex-direction: column;
   min-height: 20rem;
-  background: #0C4160;
+  background: linear-gradient(rgb(12, 65, 96)60%,#000a10);
   padding: 1rem 5rem;
+  padding-top: 10rem;
   }
 .footer-section i{
   font-size: clamp(1.5rem,2.5rem,3.5rem);
@@ -310,9 +319,11 @@ html{
   font-family: bodrum;
   text-align: center;
   font-size: 3rem;
+  line-height: 1rem;
 }
 .footerlogo p{
   text-align: center;
+  line-height: 1rem;
   font-size: 1rem;
   color: #90e0ef;
 }
@@ -371,6 +382,7 @@ html{
   }
   .footer-section{
     min-height: 30rem;
+    padding-top: 1rem;
   }
   .footer-row1{
     flex-direction: column;
@@ -384,7 +396,7 @@ html{
   .footerlogo h1{
     font-family: bodrum;
     text-align: center;
-    font-size: clamp(1rem, 1.5rem,2.5rem);
+    font-size: 2.3rem;
   }
   .footerlogo p{
     text-align: center;
@@ -407,28 +419,29 @@ html{
   .follow-us h1{
     text-align: left;
     margin-left: clamp(1.5rem,2.5rem,3.5rem);
-    
+  }
+  .find-us,.call-us,.mail-us{
+    margin-top: 1rem;
   }
 }
 @media (max-width: 480px){
   .footer-section{
-    display: flex;
-    flex-direction: column;
-    min-height: 20rem;
-    background: #0C4160;
     padding: 1rem 0.5rem;
   }
   .footer-section p{
     font-size: 0.8rem;
   }
   .follow-us .box2 p{
-    font-size: clamp(0.5rem,10%,1rem);
+    font-size: 0.7rem;
   }
   .footer-section h1{
     font-size: 1rem;
   }
   .footerlogo{
     transform: translateX(0px);
+  }
+  .footerlogo p{
+    font-size: 0.5rem;
   }
 }
 
