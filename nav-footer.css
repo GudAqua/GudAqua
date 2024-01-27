@@ -337,6 +337,11 @@ html{
   color: #caf0f8;
   
 }
+.follow-us .box2 div a i:hover,.find-us div a i:hover,.mail-us div a p:hover, .mail-us div a:hover{
+  color: #ffffff;
+  transition: 0.5s;
+}
+
 @media (max-width: 1450px){
   .follow-us .box2{
     flex-direction: column;
