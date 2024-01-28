@@ -166,7 +166,7 @@ html{
       height: 0;
       background: rgba(0, 115, 255, 0.9);
       box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
-      overflow: hidden;
+      /* overflow: hidden; */
       transition: 0.5s ease;
   }
 
@@ -220,8 +220,6 @@ html{
   background: transparent;
 }
 .wave-section .wave{
-  animation: waves 30s linear infinite;
-  animation-delay: 0s;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -444,4 +442,24 @@ html{
     font-size: 0.5rem;
   }
 }
+/* html{
+  scrollbar-width: thin;
+}  */
+  html{
+  overflow: overlay;
+}
+html::-webkit-scrollbar{
+  overflow: overlay;
+  width: 3px;
+}
+html::-webkit-scrollbar-thumb{
+  background-color: rgba(65, 65, 65);
+  width: 2px;
+  border-radius: 25px;
+
+}
+ html::-webkit-scrollbar-track{
+  overflow: overlay;
+  background-color: transparent;
+}   
 
