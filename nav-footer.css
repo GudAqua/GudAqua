@@ -445,7 +445,7 @@ html{
 /* html{
   scrollbar-width: thin;
 }  */
- /* html{
+  html{
   overflow: overlay;
 }
 html::-webkit-scrollbar{
@@ -461,21 +461,5 @@ html::-webkit-scrollbar-thumb{
  html::-webkit-scrollbar-track{
   overflow: overlay;
   background-color: transparent;
-}   */
-html::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-html::-webkit-scrollbar-thumb {
-  background-color: #000000;
-  border-radius: 10px;
-}
-
-html {
-  overflow: overlay;
-}
-
-html::-webkit-scrollbar {
-  width: 8px;
-}
+}   
 
