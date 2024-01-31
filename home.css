@@ -2,7 +2,6 @@
 html{
     box-sizing: border-box;
 }
-/* Box-sizing */
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +12,25 @@ html{
   font-family: Bodrum;
   src: url(font/bodrum-soft-15-medium.otf);
 }
-/*Feel free to change the code below */
+/*Typography / Font sizes*/
+:root{
+  --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);
+  --fs-m: 2rem;
+  --fs-s: 1rem;
+}
+@media (min-width: 40em) {
+  :root{
+    --fs-m: 3rem;
+    --fs-s: 1.125rem;
+  }
+}
+
+
+
+
+
+
+/**/
 .container{
     height: 100rem;
   }
