@@ -166,7 +166,7 @@ html{
       height: 0;
       background: rgba(0, 115, 255, 0.9);
       box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
-      /* overflow: hidden; */
+      overflow: hidden; 
       transition: 0.3s ease;
   }
 
@@ -176,11 +176,11 @@ html{
   }
 
   .navbar a{
-      display: block;
+       display: block; 
       font-size: 1.1rem;
       margin: 1.5rem 0;
       text-align: center;
-      transform: translateY(-50px);
+      transform: translateY(-10px);
       opacity: 0;
       transition: 0.5s ease;
   }
@@ -193,9 +193,11 @@ html{
   }
 
   #check:checked~.navbar a {
+      display: block;
       transform: translateY(0);
       opacity: 1;
-      /* transition-delay: calc(.15s * var(--i)); */
+      transition: 0.2s;
+        transition-delay: calc(.15s * var(--i));  
   }
   .navbar ul{
     flex-direction: column;
