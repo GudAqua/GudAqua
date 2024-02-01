@@ -19,7 +19,8 @@ html{
 
 
 .header{
-  position: fixed;
+  position: sticky;
+  top: 0px;
   place-self: center;
   width: 100%;
   height: auto;
