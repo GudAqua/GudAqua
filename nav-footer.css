@@ -16,7 +16,10 @@ html{
   font-family: Bodrum;
   src: url(font/bodrum-soft-15-medium.otf);
 }
-
+@font-face {
+  font-family: genty-sans;
+  src: url(font/genty-sans-regular.otf);
+}
 
 .header{
   position: sticky;
