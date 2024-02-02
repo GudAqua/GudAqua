@@ -173,12 +173,41 @@ img{
 .container{
   min-height: 100rem;
 }
+.droplet{
+  pointer-events: all;
+  width: 20vmin;
+  position: absolute;
+  z-index: 2;
+  animation: drop 20s infinite;
+  opacity: 50%;
+  transition: 1s;
+}
+.droplet:hover{
+  width: 25vmin;
+}
+@keyframes drop{
+  0%{
+    transform: translatex(35%);
+  }
+  25%{
+    transform: translatex(-60%);
+  }
+  50%{
+    transform: translatex(-145%);
+  }
+  75%{
+    transform: translatex(-30%);
+  }
+  100%{
+    transform: translatex(35%);
+  }
+}
 
 .wrapper {
   display: flex;
 }
 #wrapper1{
-  background: #E1FAFF;
+  background: radial-gradient(circle at calc(0% + 300px),rgba(111, 231, 255, 0.2)35%,rgb(65, 147, 255),rgb(2, 34, 75)),linear-gradient(rgba(225, 250, 255,0.3)60%,rgba(1, 81, 185,0.7)),url(images/bg/pexels-pixabay-40784.jpg);
   padding-bottom: 5rem;
 }
 .wrapper #w1box1{
@@ -214,6 +243,12 @@ img{
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 #01c0f0; }
 }
+@keyframes pulse2 {
+  0% {
+     box-shadow: 0 0 0 0 rgba(0, 48, 109,0.5);
+     background-color: rgba(0, 48, 109,0.5);
+   }
+}
 .order-text{
   text-decoration: none;
 }
@@ -243,19 +278,29 @@ img{
 }
 .smallbox img{
   height: 100px;
+  pointer-events: all;
+  
+}
+.smallbox img:hover{
+  animation: pulse2 1s;
+  box-shadow: 0 0 0 2em transparent;
+  border-radius: 50px
+  
 }
 
 #wrapper2{
   background: #E1FAFF;
   justify-content: space-evenly;
-  padding: 1rem 2rem;
+  padding: 4rem 2rem;
   flex-wrap: wrap;
   padding-bottom: 5rem;
+  border-top: 10px solid rgba(0, 48, 109,1);
 }
 .heading-water{
   background: rgba(0, 48, 109,1);
   padding: 4rem;
   padding-top:8rem;
+  transform: translatey(3px);
 }
 #wrapper3{
   background: linear-gradient(rgb(0, 48, 109)60%,rgb(157, 209, 232));
@@ -267,6 +312,7 @@ img{
   "glass1 glass1 text2 text2 text2";
   padding: 1rem;
   padding-bottom: 10rem;
+  transform: translatey(2px);
 }
 #wrapper3 .glassdiv{
   grid-area: glass1;
@@ -320,8 +366,9 @@ img{
   justify-content: center;
   align-items: center;
   margin: 1rem 12.5%;
-  border: 2px solid #233DFF;
+  border: 4px solid #233DFF;
   margin-top: 10rem;
+  box-shadow: 20px 20px 2px #3953ff;
 }
 .filtration img{
   width: 100%;
@@ -369,6 +416,7 @@ img{
   #wrapper1{
     flex-direction: column;
     padding-bottom: 1rem;
+    background: rgba(225, 250, 255);
   }
   .wrapper #w1box1{
     margin: auto;
@@ -396,7 +444,7 @@ img{
     display: none;
   }
   .hiddenbutton{
-    background: #E9F8FF;
+    background: #E1FAFF;
     display: flex;
     justify-content: center;
     padding-bottom: 5rem;
@@ -406,7 +454,9 @@ img{
   }
   #wrapper2{
     padding: 2px;
-    padding-bottom: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border: none;
   }
   .smallbox{
     text-align: center;
