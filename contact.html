@@ -49,7 +49,148 @@
     </header>
     <!--Dito Kayo mag start ng code-->
     <main>
-      <section class="container" id="section1"></section>
+      <section class="container" id="section1">
+        <div class="inner-1 cont">
+          <div>
+            <div class="txt">
+              <h1>Be Our Partner</h1>
+              <p>Partner with us for exclusive benefits! Enjoy special discounts and collaborative promotions tailored for your business, whether you're in the restaurant industry or beyond. Join forces with us, amplify your reach, and apply now for a partnership that goes beyond the ordinary.</p>
+            </div>
+            <img src="./images/GUD-Aqua.jpg" alt="GUD-Aqua">
+          </div>
+        </div>
+        <div class="inner-2 cont">
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3937.663719812569!2d118.40819700000002!3d9.27431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMTYnMjcuNSJOIDExOMKwMjQnMjkuNSJF!5e0!3m2!1sen!2sph!4v1706883535609!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="socmed">
+              <div>
+                <i class="bx bxs-phone-call"></i>
+                <p>
+                  0998 381 1888(Globe) <br>
+                  0977 2430 880(Smart)
+                </p>
+              </div>
+              <div>
+                <i class="bx bxs-envelope"></i>
+                <p>gudaquaph@gmail.com</p>
+              </div>
+              <div>
+                <a href="https://www.facebook.com/gudaquap" target="_blank">
+                  <i class="bx bxl-facebook-circle"></i>
+                </a>
+                <p>web.facebook.com/gudaquaph</p>
+                
+              </div>
+              <div>
+                <a href="https://www.instagram.com/gudaqua" target="_blank">
+                  <i class="bx bxl-instagram-alt"></i>
+                </a>
+                <p>www.instagram.com/gudaqua</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner-3 cont">
+          <ul class="form-nav">
+            <li>
+              <button class="form-nav-btn" onclick="toggleFormTab('Partnership')">Partnership</button>
+            </li>
+            <li>
+              <button class="form-nav-btn" onclick="toggleFormTab('Apply')">Apply</button>
+            </li>
+            <li>
+              <button class="form-nav-btn" onclick="toggleFormTab('Order')">Order</button>
+            </li>
+            <li>
+              <button class="form-nav-btn" onclick="toggleFormTab('Feedback')">Feedback</button>
+            </li>
+          </ul>
+          <div class="form-tabs">
+            <article class="partnership current">
+              <h1>Partnership</h1>
+              <form action="mailto:" method="post">
+                <div class="inputs">
+                  <div>
+                    <input type="name" name="name" id="name" placeholder="Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                  </div>
+                  <input type="text" name="phone number" placeholder="Phone Number">
+                  <input type="text" name="company name" placeholder="Company Name" required>
+                </div>
+                <div class="Bottom">
+                  <button class="btn" type="submit">Send Message</button>
+                  <button class="btn" type="reset">Clear</button>
+                </div>
+              </form>
+            </article>
+            <article class="apply">
+              <h1>Apply</h1>
+              <form action="mailto:" method="post">
+                <div class="inputs">
+                  <div>
+                    <input type="text" id="fullName" name="fullName" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                  </div>
+                  <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                  <input type="text" id="position" name="position" placeholder="Position" required>
+                  <p>Resume (PDF or Docs)</p>
+                  <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+                </div>
+                <div class="Bottom">
+                  <button class="btn" type="submit">Send Message</button>
+                  <button class="btn" type="reset">Clear</button>
+                </div>
+              </form>
+            </article>
+            <article class="order">
+              <h1>Order</h1>
+              <form action="mailto:" method="post">
+                <div class="inputs">
+                  <div>
+                    <input type="text" id="customerName" name="customerName" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                  </div>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                  <textarea id="deliveryAddress" name="deliveryAddress" rows="4" placeholder="Delivery Address" required></textarea>
+                  <label for="deliveryDate">Delivery Date:</label>
+                  <input type="date" id="deliveryDate" name="deliveryDate" required>
+                  <label for="deliveryTime">Delivery Time:</label>
+                  <input type="time" id="deliveryTime" name="deliveryTime" required>
+                  <label for="specialInstructions">Special Instructions:</label>
+                  <textarea id="specialInstructions" name="specialInstructions" rows="4"></textarea>
+                </div>
+                <div class="Bottom">
+                  <button class="btn" type="submit">Send Message</button>
+                  <button class="btn" type="reset">Clear</button>
+                </div>
+              </form>
+            </article>
+            <article class="feedback">
+              <h1>Feedback</h1>
+              <form action="mailto:" method="post">
+                <div class="inputs">
+                  <div>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                  </div>
+                  <label for="feedbackType">Feedback Type:</label>
+                  <select id="feedbackType" name="feedbackType" required>
+                    <option value="general">General Feedback</option>
+                    <option value="complaint">Complaint</option>
+                    <option value="compliment">Compliment</option>
+                  </select>
+                  <label for="feedbackMessage">Your Feedback:</label>
+                  <textarea id="feedbackMessage" name="feedbackMessage" rows="4" required></textarea>
+                </div>
+                <div class="Bottom">
+                  <button class="btn" type="submit">Send Message</button>
+                  <button class="btn" type="reset">Clear</button>
+                </div>
+              </form>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
     <!--Dito End ng code-->
     <footer class="footer">
@@ -131,4 +272,17 @@
       </div>
     </footer>
   </body>
+  <script>
+    function toggleFormTab(tab){
+      const formNavBtn = document.querySelectorAll('.form-nav-btn');
+      const formTabs = document.querySelector('.form-tabs').children;
+
+      for(var i = 0; i < 4; i++) formTabs[i].classList.remove('current');
+      
+      if(tab == 'Partnership') formTabs[0].classList.add('current');
+      if(tab == 'Apply') formTabs[1].classList.add('current');
+      if(tab == 'Order') formTabs[2].classList.add('current');
+      if(tab == 'Feedback') formTabs[3].classList.add('current');
+    }
+  </script>
 </html>
