@@ -219,6 +219,11 @@ img{
   gap: 2rem;
   margin-left: 5rem;
 }
+.divbutton{
+  transform: translateY(300%);
+  position: absolute;
+  display: flex;
+}
 .order-button{
   margin-top: 3rem;
   background-color: #0151B9;
@@ -230,6 +235,7 @@ img{
   font-family: Kollektif;
   font-size: var(--fs-m);
   cursor: pointer;
+  margin: 1rem 1rem
 }
 .order-button:hover{
   background-color: #01c0f0;
@@ -240,6 +246,15 @@ img{
   animation: pulse 1s;
   box-shadow: 0 0 0 2em transparent;
 }
+.explore{
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #0151B9;
+  color: #0151B9;
+}
+.explore:hover{
+  color: antiquewhite;
+}
+
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 #01c0f0; }
 }
