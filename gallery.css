@@ -26,6 +26,7 @@ html{
   color: #004eb3;
   font-size: 4rem;
 	font-weight: 700;
+  text-shadow: 2px 2px 1px white;
 }
 .pgallery{
   font-family: genty-sans;
