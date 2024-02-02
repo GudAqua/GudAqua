@@ -207,7 +207,7 @@ img{
   display: flex;
 }
 #wrapper1{
-  background: radial-gradient(circle at calc(0% + 300px),rgba(111, 231, 255, 0.2)35%,rgb(65, 147, 255),rgb(2, 34, 75)),linear-gradient(rgba(225, 250, 255,0.3)60%,rgba(1, 81, 185,0.7)),url(images/bg/pexels-pixabay-40784.jpg);
+  background: radial-gradient(circle at calc(0% + 300px),rgba(111, 231, 255, 0.2)35%,rgb(65, 147, 255),rgb(2, 34, 75)),linear-gradient(rgba(225, 250, 255,0.3)60%,rgba(1, 81, 185,0.7)),url(ima);
   padding-bottom: 5rem;
 }
 .wrapper #w1box1{
@@ -283,6 +283,72 @@ img{
   width: clamp(400px, 90% + 1rem, 800px);
   height:auto;
 }
+.hero1{
+  transform: translateX(0px);
+  animation: hello 13s infinite;
+}
+.hero2{
+  display: block;
+  animation: hello2 13s infinite;
+}
+
+@keyframes hello{
+  0%{
+    opacity: 0;
+    display: block;
+  }
+  10%{
+    opacity: 1;
+    display: block;
+  }
+  35%{
+    opacity: 1;
+    display: block;
+  }
+  40%{
+    opacity: 0;
+    display: none;
+  }
+  50%{
+    opacity: 0;
+    display: none;
+  }
+  90%{
+    opacity: 0;
+    display: none;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+  }
+} 
+
+@keyframes hello2{
+  0%{
+    opacity: 1;
+    display: none;
+  }
+  10%{
+    opacity: 0;
+    display: none;
+  }
+  40%{
+    opacity: 0;
+    display: none;
+  }
+  50%{
+    opacity: 1;
+    display: block;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+  }
+} 
+
 .hiddenbutton{
   display: none;
 }
@@ -338,7 +404,23 @@ img{
 .glassdiv img{
   width:  clamp(200px, 90% + 1rem, 600px);
   height: auto;
+  animation: glasshover 5s infinite;
 }
+@keyframes glasshover{
+  0%{
+    transform: translateY(0);
+  }
+  45%{
+    transform: translateY(-5%);
+  }
+  50%{
+    transform: translateY(-5%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
 #wrapper3 .text1div{
   grid-area: text1;
 }
@@ -406,6 +488,7 @@ img{
     object-fit: cover;
     width: 100%;
     height: 400px;
+    object-position: 0%;
   }
   .wrapper #w1box1{
     padding: 2rem;
