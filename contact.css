@@ -186,6 +186,9 @@ input[type="file"]{
   .inner-2 > div{
     flex-direction: column;
   }
+  main{
+    margin-bottom: 25rem;
+  }
 }
 @media(max-width: 940px){
   .cont{
