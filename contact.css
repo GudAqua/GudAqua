@@ -14,15 +14,9 @@ html{
   src: url(font/bodrum-soft-15-medium.otf);
 }
 /*Feel free to change the code below */
-.container{
-  height: 100rem;
-}
 body{
   background: url('./images/bg/contact-bg.jpg');
   object-fit: cover;
-}
-main{
-  padding-bottom: 300px;
 }
 .cont{
   width: 1350px;
@@ -31,6 +25,9 @@ main{
 h1{
   color: #0C4160;
   font-size: 32px;
+}
+p, button{
+  font-size: clamp(14px, -0.875rem + 5vw, 16px);
 }
 button{
   color: black;
@@ -81,6 +78,7 @@ input[type="file"]{
   padding: 20px;
   gap: 10px;
   margin-block: 20px;
+  border-radius: 10px;
 }
 .inner-2 .socmed a{
   cursor: pointer;
@@ -90,19 +88,15 @@ input[type="file"]{
   align-items: center;
   gap: 10px;
 }
-.inner-3{
-  margin-bottom: 150px;
-}
 .inner-3 .form-nav{
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
   list-style: none;
   background: linear-gradient(to right,#0156c3,#0049a8);
 }
 .inner-3 .form-nav button{
   color: rgb(240, 236, 229);
-  font-size: 16px;
   text-transform: uppercase;
   padding: 15px 10px;
 }
@@ -194,17 +188,46 @@ input[type="file"]{
   .cont{
     width: 700px;
   }
+  .inner-3 form{
+    width: 70%;
+  }
 
 }
 @media(max-width: 740px){
   .cont{
     width: 520px;
   }
-
+  .inner-2 .socmed{
+    padding: 10px;
+  }
+  .inner-3 .form-nav{
+    gap: 0;
+  }
+  .inner-3 .form-nav button{
+    padding: 15px 6px;
+  }
+  .inner-3 form{
+    width: 90%;
+  }
+  .inner-3 form .inputs div{
+    flex-direction: column;
+  }
+  .inner-3 form button{
+    padding: 8px;
+  }
 }
 @media(max-width: 560px){
   .cont{
     width: calc(100% - 30px);
+  }
+  .inner-3 .form-nav{
+    flex-direction: column;
+    font-size: 10px;
+    gap: 0;
+  }
+  .inner-3 .form-nav li{
+    display: flex;
+    justify-content: center;
   }
   
 }
