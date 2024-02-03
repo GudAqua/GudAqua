@@ -170,6 +170,7 @@ html{
 	height: 100%;
 	object-fit: cover;
 	transition: transform 400ms ease-out;
+  cursor: pointer;
 }
 
 .gallery-image:hover {
