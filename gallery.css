@@ -14,6 +14,11 @@ html{
   src: url(font/bodrum-soft-15-medium.otf);
 }
 /*Feel free to change the code below */
+.logo img{
+  pointer-events: none;
+  user-select: none;
+}
+
 .pdiv{
   position: absolute;
   transform: translate(-50%,-50%);
@@ -69,6 +74,9 @@ html{
 .section-container img{
   width: 100%;
 }
+.section-container a{
+  width: 100%;
+}
 .container{
   aspect-ratio: 16/9;
   width: 95vmin;
@@ -121,6 +129,7 @@ html{
 .wrapper1 img{
   width: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .container2 {
@@ -169,6 +178,31 @@ html{
 .gallerysection{
   margin-bottom: 10rem;
 }
+
+/*Lightbox*/
+#lightbox {
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lightbox img{
+  max-height: 80vmin;
+  max-width: 80%;
+  padding: 4px;
+  background-color: #0156c3;
+  border: 2px solid #99EEFF;
+}
+
 
 @supports (display: grid) {
 	.gallery {
