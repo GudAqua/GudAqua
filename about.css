@@ -15,7 +15,7 @@ html{
 }
 /*Feel free to change the code below */
 .container{
-    height: 100rem;
+    min-height: 100rem;
   }
 
   .AS {
