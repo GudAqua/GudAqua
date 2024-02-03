@@ -353,7 +353,7 @@ html{
   text-decoration: none;
   
 }
-.follow-us .box2 div a i:hover,.find-us div a i:hover,.find-us div a p:hover,.mail-us div a i:hover,.mail-us div a p:hover, .mail-us div a:hover, .follow-us .box2 div a p:hover{
+.site ul li a:hover,.follow-us .box2 div a i:hover,.find-us div a i:hover,.find-us div a p:hover,.mail-us div a i:hover,.mail-us div a p:hover, .mail-us div a:hover, .follow-us .box2 div a p:hover{
   color: #ffffff;
   transition: 0.5s;
 }
@@ -376,14 +376,46 @@ html{
   color: #b8b8b8;
   transition: 2s;
 }
+.site-map{
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  padding: 0 6rem;
+  margin-bottom: 3rem;
+}
+.site{
+  padding: 1rem 2rem;
+}
+.site b{
+  font-size: 1.5rem;
+  color: #90e0ef;
+}
+.site b:hover{
+  color: #ffffff;
+  text-shadow: 1px 1px 6px rgba(0, 234, 255,0.5);
+  transition: 0.2s;
+}
+.site ul{
+  padding-left: 1rem;
+  list-style: none;
+}
+.site ul li a{
+  color: #92aeb3;
+}
+
 
 @media (max-width: 1450px){
   .follow-us .box2{
     flex-direction: column;
     margin-top: 0;
   }
-
 }
+@media (max-width: 1259px){
+  .site-map{
+    padding: 0 2rem;
+  }
+}
+
 @media (max-width: 1130px){
   .footerlogo h1{
     font-family: bodrum;
@@ -398,8 +430,27 @@ html{
   .footerlogo img{
     max-height: 100px;
   }
+  .site-map{
+    flex-wrap: wrap;
+  }
+  .site{
+    padding: 1rem 1rem;
+  }
 }
-
+@media (max-width: 966px){
+  .site-map{
+    padding: 0 3rem;
+    justify-content: space-evenly;
+  }
+  .site{
+    padding: 1rem 3rem;
+  }
+}
+@media (max-width: 872px){
+  .site-map{
+    padding: 0 2rem;
+  }
+}
 @media (max-width: 863px){
   .wave-section .wave{
     background-size: 1000px 100px;
@@ -447,6 +498,24 @@ html{
   .find-us,.call-us,.mail-us{
     margin-top: 1rem;
   }
+  .site-map{
+    padding: 0rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 352px;
+  }
+  .site{
+    padding: 1rem 1rem;
+    width: 175px;
+  }
+}
+@media (max-width: 511px){
+  .site b{
+    font-size: 1.25rem;
+  }
+  .site{
+    padding: 1rem 0.5rem;
+  }
 }
 @media (max-width: 480px){
   .footer-section{
@@ -474,6 +543,25 @@ html{
   }
   .footerlogo img{
     max-height: 80px;
+  }
+  .site-map{
+    padding: 0rem;
+    justify-content: start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: auto;
+    margin-left: 1rem;
+  }
+  .site{
+    padding: 1rem 1rem;
+    width: auto;
+  }
+  .site b{
+    font-size: 1rem;
+  }
+  .site ul li a{
+    line-height: clamp(0.5rem,2vw + 0.2rem,0.7rem);
+    font-size: clamp(0.7rem,2vw + 0.2rem,0.7rem);
   }
 }
 
