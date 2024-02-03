@@ -53,6 +53,7 @@ html{
     height: auto;
     object-fit: contain;
     transition: transform 0.3s ease-in-out;
+    box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.1);
   }
   
   .box:hover .product-image {
