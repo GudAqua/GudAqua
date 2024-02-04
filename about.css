@@ -68,7 +68,7 @@ body{
     /* transform: translateX(calc(50% - 5rem)); */
   }
   
-  .paragraph,ul,li{
+  .paragraph,.part2 ul,.part2 li{
     padding-left: 1rem;
     padding-right: 1rem;
     line-height: 1.6;
