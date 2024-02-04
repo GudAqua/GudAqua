@@ -14,27 +14,72 @@ html{
   src: url(font/bodrum-soft-15-medium.otf);
 }
 /*Feel free to change the code below */
-.container{
-    min-height: 100rem;
-  }
+
+#section1{
+  min-height: 200vh;
+  padding: 0 10rem;
+  padding-bottom: 10rem;
+  background: linear-gradient(rgb(202, 240, 248)3%,rgb(202, 240, 248),rgb(98, 181, 196));
+}
+body{
+  overflow-x: hidden;
+}
+
+
+.div1{
+  display: flex;
+}
+.div2{
+  padding: 0rem 1rem;
+}
+
+
+.div2 img{
+  width: 40%;
+  float: left;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+}
+.div2{
+  width: 100%;
+}
+.part1,.part2{
+  margin-bottom: 2rem;
+}
+.cert{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.cert1{
+  width: 80%;
+}
+.cert img{
+  width: 100%;
+}
 
   .AS {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
-    color: #4CAF50; 
-    margin-top: 2rem;
+    color: #0156c3; 
+    padding-top: 3rem;
+    margin-bottom: 5rem;
+    /* transform: translateX(calc(50% - 5rem)); */
   }
   
-  .paragraph {
+  .paragraph,ul,li{
+    padding-left: 1rem;
+    padding-right: 1rem;
     line-height: 1.6;
     color: #555; 
     margin-bottom: 1rem;
   }
-  
+
   h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: #4CAF50; 
+    color: #0C4160; 
     margin-top: 2rem;
   }
   
@@ -47,9 +92,12 @@ html{
     margin-bottom: 1.5rem;
   }
   
+
+
   @media (max-width: 768px) {
     .AS {
         font-size: 2rem;
+        margin-bottom: 1.5rem;
     }
   
     h2 {
@@ -58,6 +106,11 @@ html{
   
     .paragraph {
         font-size: 1rem;
+    }
+    #section1{
+      padding: 0 1rem;
+      padding-left:1rem;
+      padding-bottom: 10rem;
     }
   }
   
